@@ -522,7 +522,7 @@ button:active {
   async function mockAnalyze() {
     const input = document.getElementById("input").value;
 
-    const res = await fetch("http://localhost:3001/analyze", {
+    const res = await fetch("https://foodgptbackend.vercel.app/analyze", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -546,3 +546,4 @@ button:active {
 
 </body>
 </html>
+
